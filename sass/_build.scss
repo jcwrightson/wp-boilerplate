@@ -1,0 +1,55 @@
+@import "boilerplate";
+@import "mixins";
+@import "footer";
+
+$app-width:1260px;
+
+
+
+img {
+  max-width: 100%;
+  vertical-align: bottom; }
+
+a {
+  color: #444;
+  text-decoration: none; }
+
+a:hover {
+  color: #444; }
+
+a:focus {
+  outline: 0; }
+
+a:hover,
+a:active {
+  outline: 0; }
+
+input:focus {
+  outline: 0;
+  border: 1px solid #04A4CC; }
+
+*:after,
+*:before {
+  -moz-box-sizing:border-box;
+  box-sizing:border-box;
+  -webkit-font-smoothing:antialiased;
+  font-smoothing:antialiased;
+  text-rendering:optimizeLegibility;
+}
+
+.clear:before,
+.clear:after {
+  content: ' ';
+  display: table; }
+
+.clear:after {
+  clear: both; }
+
+.clear {
+  *zoom: 1; }
+
+.container, section {
+  max-width: $app-width;
+  margin: auto;
+}
+
